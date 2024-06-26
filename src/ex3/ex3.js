@@ -6,3 +6,13 @@
 // take username.value
 // render html container with text "hello <username.value>"
 
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    console.log('clicked');
+
+    const input = document.getElementById('username');
+
+    document.getElementById('container').innerHTML = `Hello ${input.value}`
+})
