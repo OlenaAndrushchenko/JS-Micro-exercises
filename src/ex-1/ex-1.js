@@ -10,5 +10,3 @@ function renderTitle(title) {
 }
 
 renderTitle(title)
-
-console.log(container)

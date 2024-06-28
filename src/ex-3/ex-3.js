@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
 
     console.log('clicked');
 
-    const input = document.getElementById('username');
+    const usernameInput = document.getElementById('username');
 
-    document.getElementById('container').innerHTML = `Hello ${input.value}`
+    document.getElementById('container').innerHTML = `Hello ${usernameInput.value}`
 })
