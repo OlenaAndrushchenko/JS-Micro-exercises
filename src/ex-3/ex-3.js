@@ -10,9 +10,7 @@ const form = document.getElementById('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    console.log('clicked');
-
     const usernameInput = document.getElementById('username');
 
-    document.getElementById('container').innerHTML = `Hello ${usernameInput.value}`
+    document.getElementById('container').textContent = `Hello ${usernameInput.value}`
 })

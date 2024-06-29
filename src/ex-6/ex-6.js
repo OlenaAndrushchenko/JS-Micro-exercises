@@ -14,9 +14,8 @@ function render() {
 
         const result = Math.max(num1, num2, num3);
 
-        const container = document.getElementById('container');
-        const text = `The largest number is ${result}`
-        container.innerHTML = text
+        document.getElementById('container').textContent = `The largest number is ${result}`
+        
 
     })
 }

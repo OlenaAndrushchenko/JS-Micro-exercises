@@ -11,9 +11,8 @@ function render() {
         const num1 = parseInt(document.getElementById('num-one').value);
         const num2 = parseInt(document.getElementById('num-two').value);
         const result = num1 + num2;
-        const container = document.getElementById('container');
-        const text = `The sum of ${num1} + ${num2} is ${result}`
-        container.innerHTML = text
+
+        document.getElementById('container').textContent = `The sum of ${num1} + ${num2} is ${result}`
 
     })
 }
