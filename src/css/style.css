@@ -5,6 +5,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #c9c9c9;
 }
 main { 
     max-width: 1200px;
@@ -21,7 +22,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
-    /* background-color: #444; */
     text-align: center;
     padding: 10px 0;
     max-width: 1200px;
@@ -44,4 +44,42 @@ nav a:hover {
 }
 .home-link:hover {
     background-color: #45a049;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 24px);
+    max-width: 300px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #777;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+ol li {
+    margin-bottom: 10px;
 }
